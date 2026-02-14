@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app
+  name: flask-deployment
   namespace: ivolve
 spec:
   replicas: 2
@@ -14,7 +14,8 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-app
-        image: emma175/cloud-devops-app:latest
+      - name: flask-container
+        image: emma175/cloud-devops-app:latest  # خليكي متأكدة من اسم الايميج بتاعك
         ports:
         - containerPort: 5000
+
