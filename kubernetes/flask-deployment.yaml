@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: emma175/cloud-devops-app:latest  # خليكي متأكدة من اسم الايميج بتاعك
+        image: emma175/cloud-devops-app:latest 
         ports:
         - containerPort: 5000
 
