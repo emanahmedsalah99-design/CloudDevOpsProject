@@ -1,0 +1,42 @@
+@Library('my-shared-library') _
+
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "myapp:${env.BUILD_NUMBER}"
+    }
+
+    stages {
+        stage('Build Image') {
+            steps {
+                buildImage(IMAGE_NAME)
+            }
+        }
+        stage('Scan Image') {
+            steps {
+                scanImage(IMAGE_NAME)
+            }
+        }
+        stage('Push Image') {
+            steps {
+                pushImage(IMAGE_NAME)
+            }
+        }
+        stage('Delete Image Locally') {
+            steps {
+                deleteImage(IMAGE_NAME)
+            }
+        }
+        stage('Update Manifests') {
+            steps {
+                updateManifests(IMAGE_NAME)
+            }
+        }
+        stage('Push Manifests') {
+            steps {
+                pushManifests()
+            }
+        }
+    }
+}
