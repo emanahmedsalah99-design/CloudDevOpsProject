@@ -1,0 +1,7 @@
+
+- name: Configure Local Server
+  hosts: local
+  become: yes
+  roles:
+    - common
+    - jenkins

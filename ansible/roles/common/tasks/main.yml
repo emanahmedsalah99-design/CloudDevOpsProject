@@ -1,0 +1,13 @@
+- name: Install required packages
+  dnf:
+    name:
+      - git
+      - docker-ce
+      - java-21-openjdk-headless
+    state: present
+
+- name: Start Docker service
+  service:
+    name: docker
+    state: started
+    enabled: yes
