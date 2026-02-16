@@ -364,7 +364,7 @@ cd ~/CloudDevOpsProject/ansible
 mkdir -p roles/common/tasks
 mkdir -p roles/jenkins/tasks
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-Structure%20%20Roles.png?raw=true)
 
 ⚪2.Create Inventory File
 Create inventory:
