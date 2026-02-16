@@ -629,7 +629,7 @@ kubectl get applications -n argocd
 ```
 📌 If the application shows Healthy / Synced, it means ArgoCD successfully applied all Kubernetes manifests from GitHub.
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-test.png?raw=true)
 
 🔴 4.Access the Application
 Get the service URL for the deployed app:
