@@ -483,7 +483,7 @@ def call(String imageName) {
     sh "docker push ${imageName}"
 }
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-pushImage.groovy.png?raw=true)
 
 🔵4.jenkins/vars/deleteImage.groovy
 ```bash
