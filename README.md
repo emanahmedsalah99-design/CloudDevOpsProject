@@ -199,7 +199,7 @@ Makes it accessible outside the cluster
 kubectl apply -f flask-deployment.yaml
 kubectl apply -f flask-service.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-apply%20both.png?raw=true)
 6. Verify Pods and Services
 Check running pods:
 ```bash
