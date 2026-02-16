@@ -501,7 +501,7 @@ def call(String imageName) {
     sh "sed -i 's|IMAGE_NAME|${imageName}|g' ../k8s-manifest.yaml"
 }
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/5-updateManifests.groovy.png?raw=true)
 🔵6.jenkins/vars/pushManifests.groovy
 ```bash
 def call() {
