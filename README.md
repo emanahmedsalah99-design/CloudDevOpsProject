@@ -243,3 +243,115 @@ git push
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/9-commit.png?raw=true)
 
+#### 🌍 Step 4: Infrastructure Provisioning with Terraform
+🟢1.Download Terraform binary:
+```bash
+curl -LO https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
+```
+Install unzip and extract Terraform:
+```bash
+sudo yum install -y unzip
+unzip terraform_1.5.7_linux_amd64.zip
+```
+Move Terraform binary to system path:
+```bash
+sudo mv terraform /usr/local/bin/
+terraform -v
+```
+![Repository Cloned]()
+
+🟢2.Create Terraform Modules Structure
+```bash
+mkdir -p modules/network
+mkdir -p modules/server
+```
+![Repository Cloned]()
+
+🟢3.Configure Root Module
+
+Create main.tf in the Terraform root directory:
+```bash
+terraform {
+  required_version = ">= 1.5.0"
+
+  backend "local" {
+    path = "terraform.tfstate"
+  }
+}
+
+module "network" {
+  source = "./modules/network"
+}
+
+module "server" {
+  source = "./modules/server"
+}
+```
+📌 This configuration:
+- Uses local backend
+- Applies modular architecture
+- Separates network and server logic
+![Repository Cloned]()
+
+
+🟢4.Network Module Configuration
+
+Create modules/network/main.tf:
+```bash
+variable "vpc_cidr" {
+  default = "10.0.0.0/16"
+}
+
+output "vpc_id" {
+  value = "vpc-local"
+}
+
+output "public_subnet_ids" {
+  value = ["subnet-1", "subnet-2"]
+}
+
+output "igw_id" {
+  value = "igw-local"
+}
+
+output "nacl_id" {
+  value = "nacl-local"
+}
+```
+📌 This module simulates:
+- VPC
+- Public subnets
+- Internet Gateway
+- Network ACL
+![Repository Cloned]()
+
+🟢5.Server Module Configuration
+
+Create modules/server/main.tf:
+```bash
+variable "server_count" {
+  default = 2
+}
+
+output "server_ips" {
+  value = ["10.0.1.10", "10.0.1.11"]
+}
+```
+📌 This module simulates:
+- Multiple servers
+- Private IP addresse
+
+![Repository Cloned]()
+
+🟢6. Initialize & Review & Apply Terraform
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+![Repository Cloned]()
+🟢7.Commit 
+```bash
+
+```
+
