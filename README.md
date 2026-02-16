@@ -71,7 +71,7 @@ mv FinalProject/* docker/
 rm -rf FinalProject
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-clone%20app.png?raw=true) 
-![Repository Cloned]() 
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-mv%20app%20to%20dockerfile.png?raw=true) 
 
 Create a file named `Dockerfile`:
 ```bash 
