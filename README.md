@@ -124,7 +124,7 @@ Verify the cluster is running:
 ```bash
 kubectl get nodes
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-start.png?raw=true)
 
 2. Create Kubernetes Namespace
 
