@@ -106,9 +106,12 @@ docker tag cloud-devops-app yourusername/cloud-devops-app:latest
 docker push yourusername/cloud-devops-app:latest
 ```
 ![Repository Cloned]()
-- commit 
+- commit
+``` bash
 git add .
 git commit -m "Add Flask app and working Dockerfile"
 git push
+```
+![Repository Cloned]()
 
 
