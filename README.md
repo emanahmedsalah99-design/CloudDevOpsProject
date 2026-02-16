@@ -183,9 +183,9 @@ spec:
         - containerPort: 5000
 ```
 📌 This deployment:
-Runs 2 replicas
-Uses the Docker image pushed to DockerHub
-Exposes port 5000 inside the container
+- Runs 2 replicas
+- Uses the Docker image pushed to DockerHub
+- Exposes port 5000 inside the container
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-Deployment.yaml.png?raw=true)
 
@@ -208,8 +208,8 @@ spec:
       nodePort: 30007
 ```
 📌 This service:
-Exposes the Flask app using NodePort
-Makes it accessible outside the cluster
+- Exposes the Flask app using NodePort
+- Makes it accessible outside the cluster
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-servic.yaml.png?raw=true)
 
@@ -357,3 +357,95 @@ git push origin main
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-commit.png?raw=true)
 
+⚙️ Step 5: Configuration Management with Ansible
+⚪1.Create Ansible Directory Structure
+```bash
+cd ~/CloudDevOpsProject/ansible
+mkdir -p roles/common/tasks
+mkdir -p roles/jenkins/tasks
+```
+![Repository Cloned]()
+
+⚪2.Create Inventory File
+Create inventory:
+```bash
+[local]
+localhost ansible_connection=local
+```
+![Repository Cloned]()
+
+⚪3.Create Main Playbook
+
+Create playbook.yml:
+```bash
+- name: Configure Local Server
+  hosts: local
+  become: yes
+  roles:
+    - common
+    - Jenkins
+  ```
+📌 This playbook applies the common and Jenkins roles to the local host.
+![Repository Cloned]()
+
+⚪4.Configure Common Role
+
+Create roles/common/tasks/main.yml:
+```ba
+- name: Install required packages
+  dnf:
+    name:
+      - git
+      - docker
+      - java-17-openjdk
+    state: present
+
+- name: Start Docker service
+  service:
+    name: docker
+    state: started
+    enabled: yes
+  ```
+📌 This role ensures:
+Git, Docker, and Java are installed
+Docker service is running and enabled
+
+![Repository Cloned]()
+
+⚪5.Configure Jenkins Role
+
+Create roles/jenkins/tasks/main.yml:
+```bash
+- name: Add Jenkins repo
+  get_url:
+    url: https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    dest: /etc/yum.repos.d/jenkins.repo
+
+- name: Import Jenkins key
+  rpm_key:
+    state: present
+    key: https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+- name: Install Jenkins
+  dnf:
+    name: jenkins
+    state: present
+
+- name: Start Jenkins
+  service:
+    name: jenkins
+    state: started
+    enabled: yes
+```
+📌 This role ensures Jenkins is:
+Installed from official repository
+Started and enabled to run at boot
+⚪6.Run the Playbook
+```bash
+ansible-playbook -i inventory playbook.yml
+```
+⚪7.Access Jenkins
+Open Jenkins in your browser:
+```bash
+http://localhost:8080
+```
