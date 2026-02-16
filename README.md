@@ -231,6 +231,13 @@ Access the application:
 ```bash
 minikube service flask-service -n ivolve
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/8-test.png?raw=true)
 
+8. Commit and Push Changes
+```bash
+git add .
+git commit -m "Deploy Flask app on Kubernetes using Minikube"
+git push
+```
+![Repository Cloned]()
 
