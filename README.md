@@ -1,14 +1,14 @@
 
-## CloudDevOpsProject
+### CloudDevOpsProject
 End-to-end Cloud DevOps Project demonstrating modern DevOps practices using
 Docker, Kubernetes, Terraform, Ansible, Jenkins, and ArgoCD.
 
 ---
-## Project Overview
+### Project Overview
 This project showcases a complete DevOps pipeline starting from application containerization to continuous deployment on Kubernetes using GitOps principles.
 
 ---
-## Tools & Technologies
+### Tools & Technologies
 - GitHub
 - Docker
 - Kubernetes (Minikube)
@@ -17,7 +17,7 @@ This project showcases a complete DevOps pipeline starting from application cont
 - Jenkins
 - ArgoCD
 ---
-## Project Structure
+### Project Structure
 CloudDevOpsProject/
 │
 
@@ -36,7 +36,7 @@ CloudDevOpsProject/
 └── README.md
 
 ---
-## Steps & Commands 
+### Steps & Commands 
 #### 🧩 Step 1: GitHub Repository Setup
 Created GitHub repository: CloudDevOpsProject
 Initialized with README
@@ -64,7 +64,32 @@ git push
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Structure.png?raw=true)
 
-### 🐳 Step 2: Containerization with Docker
+#### 🐳 Step 2: Containerization with Docker
 Source Code
-
 Cloned Flask application source code:
+```bash 
+git clone https://github.com/Ibrahim-Adel15/FinalProject.git
+mv FinalProject/* docker/
+rm -rf FinalProject
+```
+![Repository Cloned]() 
+
+Dockerfile
+Base image: python:3.9-slim
+Install dependencies
+Run Flask app on port 5000
+Build & Run Image
+``` bash
+cd docker
+docker build -t cloud-devops-app .
+docker run -p 5000:5000 cloud-devops-app
+```
+![Repository Cloned]()
+Push Image to DockerHub
+``` bash
+docker login
+docker tag cloud-devops-app yourusername/cloud-devops-app:latest
+docker push yourusername/cloud-devops-app:latest
+```
+![Repository Cloned]()
+
