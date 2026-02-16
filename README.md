@@ -98,15 +98,8 @@ docker ps
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-Test.png?raw=true)
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-Test.png?raw=true)
-🔵5- Push Image to DockerHub
-``` bash
-docker login
-docker tag cloud-devops-app emma175/cloud-devops-app:latest
-docker push emma175/cloud-devops-app:latest
-```
-![Repository Cloned]()
 
-🔵6- Commit
+🔵5- Commit
 ``` bash
 git add .
 git commit -m "Add Flask app and working Dockerfile"
