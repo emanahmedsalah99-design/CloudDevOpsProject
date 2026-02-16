@@ -410,7 +410,7 @@ Create roles/common/tasks/main.yml:
 Git, Docker, and Java are installed
 Docker service is running and enabled
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-common.png?raw=true)
 
 ⚪5.Configure Jenkins Role
 
