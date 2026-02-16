@@ -83,7 +83,7 @@ COPY . .
 EXPOSE 5000
 CMD ["Python" ,"app.py"]
 ```
-![Repository Cloned]() 
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Dockerfile.png?raw=true) 
 Build & Run Image
 ``` bash
 cd docker
