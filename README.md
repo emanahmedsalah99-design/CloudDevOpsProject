@@ -349,7 +349,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-%20%D8%AA%D9%86%D9%81%D9%8A%D8%B0%20terraform.png?raw=true)
 🟢7.Commit 
 ```bash
 
