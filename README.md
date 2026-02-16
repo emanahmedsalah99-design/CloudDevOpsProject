@@ -449,6 +449,6 @@ ansible-playbook -i inventory playbook.yml
 ⚪7.Access Jenkins
 Open Jenkins in your browser:
 ```bash
-http://localhost:8080
+http://localhost:10000
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-%20test.png?raw=true)
