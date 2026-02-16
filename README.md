@@ -35,7 +35,7 @@ CloudDevOpsProject/
 
 └── README.md
 
-___
+---
 ## Steps & Commands 
 🧩 Step 1: GitHub Repository Setup
 Created GitHub repository: CloudDevOpsProject
