@@ -265,7 +265,7 @@ terraform -v
 mkdir -p modules/network
 mkdir -p modules/server
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-Terraform%20Module.png?raw=true)
 
 🟢3.Configure Root Module
 
