@@ -354,4 +354,5 @@ terraform apply
 ```bash
 
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-commit.png?raw=true)
 
