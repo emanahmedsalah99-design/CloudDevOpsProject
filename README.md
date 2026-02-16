@@ -73,7 +73,7 @@ rm -rf FinalProject
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-clone%20app.png?raw=true) 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-mv%20app%20to%20dockerfile.png?raw=true) 
 
-Create a file named `Dockerfile`:
+- Create a file named `Dockerfile`:
 ```bash 
 FROM Python:3.9-slim
 WORKDIR /app 
@@ -84,7 +84,7 @@ EXPOSE 5000
 CMD ["Python" ,"app.py"]
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Dockerfile.png?raw=true) 
-Build & Run Image
+- Build & Run Image
 ``` bash
 cd docker
 docker build -t cloud-devops-app .
@@ -92,16 +92,23 @@ docker run -p 5000:5000 cloud-devops-app
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-Build.png?raw=true)
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/5-%20run.png?raw=true)
-Test 
+- Test 
 ``` bash
+
+docker ps 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-Test.png?raw=true)
-![Repository Cloned]()
-Push Image to DockerHub
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-Test.png?raw=true)
+- Push Image to DockerHub
 ``` bash
 docker login
 docker tag cloud-devops-app yourusername/cloud-devops-app:latest
 docker push yourusername/cloud-devops-app:latest
 ```
 ![Repository Cloned]()
+- commit 
+git add .
+git commit -m "Add Flask app and working Dockerfile"
+git push
+
 
