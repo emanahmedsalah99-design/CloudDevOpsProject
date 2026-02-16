@@ -140,7 +140,24 @@ kubectl apply -f namespace.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-namespace.png?raw=true)
 
-3. Flask Deployment Manifest
+3. Docker Image Push to DockerHub
+Login to DockerHub:
+```bash
+docker login
+```
+Tag the local image:
+```bash
+docker tag cloud-devops-app yourusername/cloud-devops-app:latest
+```
+Push the image to DockerHub:
+```bash
+docker push yourusername/cloud-devops-app:latest
+```
+📌 Replace yourusername with your DockerHub username.
+
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-%20push%20image.png?raw=true)
+
+4. Flask Deployment Manifest
 Create flask-deployment.yaml:
 ```bash
 apiVersion: apps/v1
@@ -171,7 +188,7 @@ Exposes port 5000 inside the container
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-Deployment.yaml.png?raw=true)
 
-4. Flask Service Manifest
+5. Flask Service Manifest
 Create flask-service.yaml:
 ```bash
 apiVersion: v1
@@ -194,38 +211,26 @@ Makes it accessible outside the cluster
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-servic.yaml.png?raw=true)
 
-5. Apply Kubernetes Manifests
+6. Apply Kubernetes Manifests
 ```bash
 kubectl apply -f flask-deployment.yaml
 kubectl apply -f flask-service.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-apply%20both.png?raw=true)
-6. Verify Pods and Services
-Check running pods:
+
+ 🟢 Step 7: Verify & Test Application
+Check pods:
 ```bash
 kubectl get pods -n ivolve -l app=flask-app
 ```
-Check service details:
+Check services:
 ```bash
 kubectl get svc -n ivolve
 ```
-![Repository Cloned]()
-
-9. Docker Image Push to DockerHub
-Login to DockerHub:
+Access the application:
 ```bash
-docker login
+minikube service flask-service -n ivolve
 ```
-Tag the local image:
-```bash
-docker tag cloud-devops-app yourusername/cloud-devops-app:latest
-```
-Push the image to DockerHub:
-```bash
-docker push yourusername/cloud-devops-app:latest
-```
-📌 Replace yourusername with your DockerHub username.
-
 ![Repository Cloned]()
 
 
