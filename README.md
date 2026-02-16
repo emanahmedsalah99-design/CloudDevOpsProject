@@ -372,7 +372,7 @@ Create inventory:
 [local]
 localhost ansible_connection=local
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-inventory.png?raw=true)
 
 ⚪3.Create Main Playbook
 
