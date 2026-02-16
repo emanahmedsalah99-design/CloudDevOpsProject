@@ -445,7 +445,7 @@ Started and enabled to run at boot
 ```bash
 ansible-playbook -i inventory playbook.yml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-run%20ansible.png?raw=true)
 ⚪7.Access Jenkins
 Open Jenkins in your browser:
 ```bash
