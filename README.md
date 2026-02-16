@@ -455,7 +455,7 @@ http://localhost:10000
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-%20test.png?raw=true)
 
-🔁 Step 6: Continuous Integration with Jenkins
+#### 🔁 Step 6: Continuous Integration with Jenkins
 
 🔵1.Create Shared Library Groovy Scripts
 jenkins/vars/buildImage.groovy
