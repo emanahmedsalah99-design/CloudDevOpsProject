@@ -465,7 +465,7 @@ def call(String imageName) {
     sh "docker build -t ${imageName} ."
 }
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-buildImage.groovy.png?raw=true)
 
 🔵2.jenkins/vars/scanImage.groovy
 ```bash
