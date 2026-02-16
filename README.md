@@ -291,7 +291,7 @@ module "server" {
 - Uses local backend
 - Applies modular architecture
 - Separates network and server logic
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-main.tf.png?raw=true)
 
 
 🟢4.Network Module Configuration
