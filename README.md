@@ -611,7 +611,7 @@ spec:
 
 Check nodes:
 
-``bash
+```bash
 kubectl get nodes
 ```
 Check pods and services in the default namespace:
@@ -622,19 +622,14 @@ kubectl get svc -n default
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-test.png?raw=true)
 
 🔴 3.Verify ArgoCD Application
-
-Check ArgoCD applications:
-
-``bash 
+```bash 
 kubectl get applications -n argocd
 ```
-📌 If the application shows Healthy / Synced, it means ArgoCD successfully applied all Kubernetes manifests from GitHub.
-
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-test.png?raw=true)
 
 🔴 4.Access the Application
 Get the service URL for the deployed app:
-``bash
+```bash
 minikube service node-app-service --url
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-test.png?raw=true)
