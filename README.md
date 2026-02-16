@@ -37,7 +37,7 @@ CloudDevOpsProject/
 
 ---
 ## Steps & Commands 
-🧩 Step 1: GitHub Repository Setup
+#### 🧩 Step 1: GitHub Repository Setup
 Created GitHub repository: CloudDevOpsProject
 Initialized with README
 Created structured directories for each DevOps stage
@@ -63,3 +63,8 @@ git commit -m "Initial project structure"
 git push
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Structure.png?raw=true)
+
+### 🐳 Step 2: Containerization with Docker
+Source Code
+
+Cloned Flask application source code:
