@@ -605,7 +605,8 @@ spec:
 - Deploy resources under the kubernetes folder
 - Sync automatically (with prune and self-heal enabled)
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-%20app.yaml.png?raw=true)
+
 🔴 2.Verify Cluster Resources
 
 Check nodes:
