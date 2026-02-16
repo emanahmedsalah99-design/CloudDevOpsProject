@@ -106,6 +106,7 @@ docker tag cloud-devops-app yourusername/cloud-devops-app:latest
 docker push yourusername/cloud-devops-app:latest
 ```
 ![Repository Cloned]()
+
 - commit
 ``` bash
 git add .
@@ -164,6 +165,7 @@ spec:
 Runs 2 replicas
 Uses the Docker image pushed to DockerHub
 Exposes port 5000 inside the container
+
 ![Repository Cloned]()
 
 4. Flask Service Manifest
@@ -186,7 +188,9 @@ spec:
 📌 This service:
 Exposes the Flask app using NodePort
 Makes it accessible outside the cluster
+
 ![Repository Cloned]()
+
 5. Apply Kubernetes Manifests
 ```bash
 kubectl apply -f flask-deployment.yaml
@@ -203,6 +207,7 @@ Check service details:
 kubectl get svc -n ivolve
 ```
 ![Repository Cloned]()
+
 9. Docker Image Push to DockerHub
 Login to DockerHub:
 ```bash
@@ -217,6 +222,7 @@ Push the image to DockerHub:
 docker push yourusername/cloud-devops-app:latest
 ```
 📌 Replace yourusername with your DockerHub username.
+
 ![Repository Cloned]()
 
 
