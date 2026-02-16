@@ -619,7 +619,7 @@ Check pods and services in the default namespace:
 kubectl get pods -n default
 kubectl get svc -n default
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-test.png?raw=true)
 
 🔴 3.Verify ArgoCD Application
 
