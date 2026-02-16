@@ -258,7 +258,7 @@ Move Terraform binary to system path:
 sudo mv terraform /usr/local/bin/
 terraform -v
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-install%20terraform.png?raw=true)
 
 🟢2.Create Terraform Modules Structure
 ```bash
