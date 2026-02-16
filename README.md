@@ -341,7 +341,7 @@ output "server_ips" {
 - Multiple servers
 - Private IP addresse
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/5-server.png?raw=true)
 
 🟢6. Initialize & Review & Apply Terraform
 ```bash
