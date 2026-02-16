@@ -192,7 +192,7 @@ spec:
 Exposes the Flask app using NodePort
 Makes it accessible outside the cluster
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-servic.yaml.png?raw=true)
 
 5. Apply Kubernetes Manifests
 ```bash
