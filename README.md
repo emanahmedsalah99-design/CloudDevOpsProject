@@ -511,7 +511,7 @@ def call() {
     sh "git push origin main"
 }
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-pushManifests.groovy.png?raw=true)
 
 🔵7.Create Jenkinsfile Using Shared Library
 jenkins/Jenkinsfile
