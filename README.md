@@ -568,4 +568,4 @@ pipeline {
 - Update Kubernetes manifests with the new image
 - Push updated manifests to GitHub
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-Jenkinsfile.png?raw=true)
