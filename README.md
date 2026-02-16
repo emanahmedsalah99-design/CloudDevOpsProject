@@ -70,7 +70,9 @@ git clone https://github.com/Ibrahim-Adel15/FinalProject.git
 mv FinalProject/* docker/
 rm -rf FinalProject
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-clone%20app.png?raw=true) 
 ![Repository Cloned]() 
+
 Create a file named `Dockerfile`:
 ```bash 
 FROM Python:3.9-slim
