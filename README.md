@@ -101,8 +101,8 @@ docker ps
 🔵5- Push Image to DockerHub
 ``` bash
 docker login
-docker tag cloud-devops-app yourusername/cloud-devops-app:latest
-docker push yourusername/cloud-devops-app:latest
+docker tag cloud-devops-app emma175/cloud-devops-app:latest
+docker push emma175/cloud-devops-app:latest
 ```
 ![Repository Cloned]()
 
