@@ -64,7 +64,7 @@ git push
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Structure.png?raw=true)
 
 #### 🐳 Step 2: Containerization with Docker
-Cloned Flask application source code:
+- Cloned Flask application source code:
 ```bash 
 git clone https://github.com/Ibrahim-Adel15/FinalProject.git
 mv FinalProject/* docker/
