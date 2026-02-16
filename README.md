@@ -19,7 +19,7 @@ This project showcases a complete DevOps pipeline starting from application cont
 ---
 ### Project Structure
 CloudDevOpsProject/
-│
+│ 
 
 ├── docker/           # Flask app & Dockerfile
 
