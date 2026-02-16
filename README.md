@@ -169,7 +169,7 @@ Runs 2 replicas
 Uses the Docker image pushed to DockerHub
 Exposes port 5000 inside the container
 
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-Deployment.yaml.png?raw=true)
 
 4. Flask Service Manifest
 Create flask-service.yaml:
