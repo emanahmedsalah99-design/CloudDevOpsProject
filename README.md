@@ -56,7 +56,7 @@ touch ansible/playbook.yaml
 touch jenkins/jenkinsfile
 touch argocd/app.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-Structure.png?raw=true)
 ```bash 
 git add .
 git commit -m "Initial project structure"
