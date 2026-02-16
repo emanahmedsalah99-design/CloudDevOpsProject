@@ -18,20 +18,19 @@ This project showcases a complete DevOps pipeline starting from application cont
 # Project Structure
 CloudDevOpsProject/
 │
-
 ├── docker/          # Flask app & Dockerfile
 
 ├── kubernetes/      # Kubernetes manifests
 
--├── terraform/       # Infrastructure as Code
+├── terraform/       # Infrastructure as Code
 
--├── ansible/         # Configuration management
+├── ansible/         # Configuration management
 
--├── jenkins/         # Jenkins pipeline
+├── jenkins/         # Jenkins pipeline
 
--├── argocd/          # ArgoCD application
+├── argocd/          # ArgoCD application
 
--└── README.md
+└── README.md
 
 ___
 ## Steps & Commands 
