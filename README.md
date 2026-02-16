@@ -19,7 +19,6 @@ This project showcases a complete DevOps pipeline starting from application cont
 ---
 ### Project Structure
 CloudDevOpsProject/
-│ 
 
 ├── docker/           # Flask app & Dockerfile
 
@@ -65,7 +64,6 @@ git push
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Structure.png?raw=true)
 
 #### 🐳 Step 2: Containerization with Docker
-Source Code
 Cloned Flask application source code:
 ```bash 
 git clone https://github.com/Ibrahim-Adel15/FinalProject.git
