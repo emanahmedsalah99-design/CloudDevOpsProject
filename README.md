@@ -112,6 +112,6 @@ git add .
 git commit -m "Add Flask app and working Dockerfile"
 git push
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/8-Commit.png?raw=true)
 
 
