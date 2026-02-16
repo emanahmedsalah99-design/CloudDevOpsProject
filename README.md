@@ -352,7 +352,8 @@ terraform apply
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-%20%D8%AA%D9%86%D9%81%D9%8A%D8%B0%20terraform.png?raw=true)
 🟢7.Commit 
 ```bash
-
+git pull --redase origin main
+git push origin main
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-commit.png?raw=true)
 
