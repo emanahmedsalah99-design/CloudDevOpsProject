@@ -440,7 +440,9 @@ Create roles/jenkins/tasks/main.yml:
 📌 This role ensures Jenkins is:
 Installed from official repository
 Started and enabled to run at boot
-![Repository Cloned](ttps://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/5-jenkins.png?raw=true)
+
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/5-jenkins.png?raw=true)
+
 ⚪6.Run the Playbook
 ```bash
 ansible-playbook -i inventory playbook.yml
