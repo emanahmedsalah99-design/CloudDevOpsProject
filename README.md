@@ -474,7 +474,7 @@ def call(String imageName) {
     sh "docker scan ${imageName} || echo 'Scan completed'"
 }
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-scanImage.groovy.png?raw=true)
 
 🔵3.jenkins/vars/pushImage.groovy
 ```bash
