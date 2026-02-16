@@ -454,3 +454,118 @@ Open Jenkins in your browser:
 http://localhost:10000
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-%20test.png?raw=true)
+
+🔁 Step 6: Continuous Integration with Jenkins
+🔵1.Create Shared Library Groovy Scripts
+jenkins/vars/buildImage.groovy
+
+```bash
+def call(String imageName) {
+    echo "Building Docker image: ${imageName}"
+    sh "docker build -t ${imageName} ."
+}
+```
+![Repository Cloned]()
+
+🔵2.jenkins/vars/scanImage.groovy
+```bash
+def call(String imageName) {
+    echo "Scanning Docker image: ${imageName}"
+    sh "docker scan ${imageName} || echo 'Scan completed'"
+}
+```
+![Repository Cloned]()
+
+🔵3.jenkins/vars/pushImage.groovy
+```bash
+def call(String imageName) {
+    echo "Pushing Docker image: ${imageName}"
+    sh "docker push ${imageName}"
+}
+```
+![Repository Cloned]()
+
+🔵4.jenkins/vars/deleteImage.groovy
+```bash
+def call(String imageName) {
+    echo "Deleting local Docker image: ${imageName}"
+    sh "docker rmi ${imageName} || echo 'Image not found locally'"
+}
+```
+![Repository Cloned]()
+
+🔵5.jenkins/vars/updateManifests.groovy
+```bash
+def call(String imageName) {
+    echo "Updating manifests with image: ${imageName}"
+    sh "sed -i 's|IMAGE_NAME|${imageName}|g' ../k8s-manifest.yaml"
+}
+```
+![Repository Cloned]()
+🔵6.jenkins/vars/pushManifests.groovy
+```bash
+def call() {
+    echo "Pushing manifests to Git"
+    sh "git add ../k8s-manifest.yaml"
+    sh "git commit -m 'Update manifests with new image'"
+    sh "git push origin main"
+}
+```
+![Repository Cloned]()
+
+🔵7.Create Jenkinsfile Using Shared Library
+jenkins/Jenkinsfile
+```bash
+@Library('my-shared-library') _
+
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "myapp:${env.BUILD_NUMBER}"
+    }
+
+    stages {
+        stage('Build Image') {
+            steps {
+                buildImage(IMAGE_NAME)
+            }
+        }
+        stage('Scan Image') {
+            steps {
+                scanImage(IMAGE_NAME)
+            }
+        }
+        stage('Push Image') {
+            steps {
+                pushImage(IMAGE_NAME)
+            }
+        }
+        stage('Delete Image Locally') {
+            steps {
+                deleteImage(IMAGE_NAME)
+            }
+        }
+        stage('Update Manifests') {
+            steps {
+                updateManifests(IMAGE_NAME)
+            }
+        }
+        stage('Push Manifests') {
+            steps {
+                pushManifests()
+            }
+        }
+    }
+}
+
+```
+📌 This Jenkinsfile stages:
+-Build Docker image
+- Scan for vulnerabilities
+- Push to Docker registry
+- Delete local image to save space
+- Update Kubernetes manifests with the new image
+- Push updated manifests to GitHub
+
+![Repository Cloned]()
