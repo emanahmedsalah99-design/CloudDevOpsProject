@@ -92,6 +92,10 @@ docker run -p 5000:5000 cloud-devops-app
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-Build.png?raw=true)
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/5-%20run.png?raw=true)
+Test 
+``` bash
+```
+![Repository Cloned]()
 Push Image to DockerHub
 ``` bash
 docker login
