@@ -492,7 +492,7 @@ def call(String imageName) {
     sh "docker rmi ${imageName} || echo 'Image not found locally'"
 }
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-deleteImage.groovy.png?raw=true)
 
 🔵5.jenkins/vars/updateManifests.groovy
 ```bash
