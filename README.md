@@ -25,7 +25,8 @@ CloudDevOpsProject/
 ├── jenkins/         # Jenkins pipeline
 ├── argocd/          # ArgoCD application
 └── README.md
----
+
+___
 ## Steps & Commands 
 🧩 Step 1: GitHub Repository Setup
 Created GitHub repository: CloudDevOpsProject
