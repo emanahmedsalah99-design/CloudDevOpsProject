@@ -1,3 +1,4 @@
+
 ## CloudDevOpsProject
 End-to-end Cloud DevOps Project demonstrating modern DevOps practices using
 Docker, Kubernetes, Terraform, Ansible, Jenkins, and ArgoCD.
@@ -13,11 +14,11 @@ This project showcases a complete DevOps pipeline starting from application cont
 - Ansible
 - Jenkins
 - ArgoCD
-
 ---
 # Project Structure
 CloudDevOpsProject/
 │
+
 ├── docker/          # Flask app & Dockerfile
 
 ├── kubernetes/      # Kubernetes manifests
