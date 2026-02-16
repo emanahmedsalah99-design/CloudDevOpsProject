@@ -323,7 +323,7 @@ output "nacl_id" {
 - Public subnets
 - Internet Gateway
 - Network ACL
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-network.png?raw=true)
 
 🟢5.Server Module Configuration
 
