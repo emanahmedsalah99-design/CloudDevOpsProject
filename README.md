@@ -6,7 +6,7 @@ Docker, Kubernetes, Terraform, Ansible, Jenkins, and ArgoCD.
 ---
 ## Project Overview
 This project showcases a complete DevOps pipeline starting from application containerization to continuous deployment on Kubernetes using GitOps principles.
-### Tools & Technologies
+## Tools & Technologies
 - GitHub
 - Docker
 - Kubernetes (Minikube)
@@ -15,7 +15,7 @@ This project showcases a complete DevOps pipeline starting from application cont
 - Jenkins
 - ArgoCD
 ---
-# Project Structure
+## Project Structure
 CloudDevOpsProject/
 │
 
