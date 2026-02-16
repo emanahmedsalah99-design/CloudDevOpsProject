@@ -115,7 +115,7 @@ git push
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/8-Commit.png?raw=true)
 
 #### ☸️ Step 3: Kubernetes Orchestration
-🔵1. Start Minikube Cluster
+🟣1. Start Minikube Cluster
 ```bash
 minikube start
 ```
@@ -125,7 +125,7 @@ kubectl get nodes
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-start.png?raw=true)
 
-🔵2. Create Kubernetes Namespace
+🟣2. Create Kubernetes Namespace
 
 Create namespace.yaml:
 ```bash
@@ -139,7 +139,7 @@ kubectl apply -f namespace.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/2-namespace.png?raw=true)
 
-🔵3. Docker Image Push to DockerHub
+🟣3. Docker Image Push to DockerHub
 
 Login to DockerHub:
 ```bash
@@ -157,7 +157,7 @@ docker push yourusername/cloud-devops-app:latest
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-%20push%20image.png?raw=true)
 
-🔵4. Flask Deployment Manifest
+🟣4. Flask Deployment Manifest
 
 Create flask-deployment.yaml:
 ```bash
@@ -189,7 +189,7 @@ Exposes port 5000 inside the container
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-Deployment.yaml.png?raw=true)
 
-🔵5. Flask Service Manifest
+🟣5. Flask Service Manifest
 
 Create flask-service.yaml:
 ```bash
@@ -213,14 +213,14 @@ Makes it accessible outside the cluster
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/6-servic.yaml.png?raw=true)
 
-🔵6. Apply Kubernetes Manifests
+🟣6. Apply Kubernetes Manifests
 ```bash
 kubectl apply -f flask-deployment.yaml
 kubectl apply -f flask-service.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-apply%20both.png?raw=true)
 
- 🔵7. Verify & Test Application
+🟣7. Verify & Test Application
 Check pods:
 ```bash
 kubectl get pods -n ivolve -l app=flask-app
@@ -235,7 +235,7 @@ minikube service flask-service -n ivolve
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/8-test.png?raw=true)
 
-🔵8. Commit and Push Changes
+🟣8. Commit and Push Changes
 ```bash
 git add .
 git commit -m "Deploy Flask app on Kubernetes using Minikube"
