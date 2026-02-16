@@ -569,5 +569,73 @@ pipeline {
 - Update Kubernetes manifests with the new image
 - Push updated manifests to GitHub
 
-
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-Jenkinsfile.png?raw=true)
+
+#### 🚀 Step 7: Continuous Deployment with ArgoCD
+🔴 1.Create ArgoCD Application Manifest
+
+Navigate to the ArgoCD folder:
+```bash
+cd ~/CloudDevOpsProject/argocd
+```
+Create app.yaml:
+
+```bash
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: clouddevops-app        
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/emanahmedsalah99-design/CloudDevOpsProject.git'  
+    targetRevision: main      
+    path: 'kubernetes'        
+  destination:
+    server: 'https://kubernetes.default.svc'  
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+```
+📌 This manifest tells ArgoCD to:
+- Track the Git repository
+- Deploy resources under the kubernetes folder
+- Sync automatically (with prune and self-heal enabled)
+
+![Repository Cloned]()
+🔴 2.Verify Cluster Resources
+
+Check nodes:
+
+``bash
+kubectl get nodes
+```
+Check pods and services in the default namespace:
+```bash
+kubectl get pods -n default
+kubectl get svc -n default
+```
+![Repository Cloned]()
+
+🔴 3.Verify ArgoCD Application
+
+Check ArgoCD applications:
+``bash 
+kubectl get applications -n argocd
+```
+📌 If the application shows Healthy / Synced, it means ArgoCD successfully applied all Kubernetes manifests from GitHub.
+
+![Repository Cloned]()
+
+🔴 4.Access the Application
+Get the service URL for the deployed app:
+``bash
+minikube service node-app-service --url
+```
+![Repository Cloned]()
+
+
+
