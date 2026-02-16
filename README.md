@@ -386,7 +386,7 @@ Create playbook.yml:
     - Jenkins
   ```
 📌 This playbook applies the common and Jenkins roles to the local host.
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-playbook.yml.png?raw=true)
 
 ⚪4.Configure Common Role
 
