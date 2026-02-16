@@ -239,5 +239,5 @@ git add .
 git commit -m "Deploy Flask app on Kubernetes using Minikube"
 git push
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/9-commit.png?raw=true)
 
