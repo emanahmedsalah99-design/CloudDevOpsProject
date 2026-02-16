@@ -456,6 +456,7 @@ http://localhost:10000
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-%20test.png?raw=true)
 
 🔁 Step 6: Continuous Integration with Jenkins
+
 🔵1.Create Shared Library Groovy Scripts
 jenkins/vars/buildImage.groovy
 
@@ -567,5 +568,6 @@ pipeline {
 - Delete local image to save space
 - Update Kubernetes manifests with the new image
 - Push updated manifests to GitHub
+
 
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/7-Jenkinsfile.png?raw=true)
