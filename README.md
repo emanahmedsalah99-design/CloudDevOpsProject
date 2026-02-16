@@ -138,6 +138,8 @@ Apply it using:
 ```bash
 kubectl apply -f namespace.yaml
 ```
+![Repository Cloned]()
+
 3. Flask Deployment Manifest
 Create flask-deployment.yaml:
 ```bash
