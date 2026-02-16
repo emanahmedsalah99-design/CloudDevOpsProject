@@ -71,11 +71,17 @@ mv FinalProject/* docker/
 rm -rf FinalProject
 ```
 ![Repository Cloned]() 
-
-Dockerfile
-Base image: python:3.9-slim
-Install dependencies
-Run Flask app on port 5000
+Create a file named `Dockerfile`:
+```bash 
+FROM Python:3.9-slim
+WORKDIR /app 
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .      
+EXPOSE 5000
+CMD ["Python" ,"app.py"]
+```
+![Repository Cloned]() 
 Build & Run Image
 ``` bash
 cd docker
