@@ -127,6 +127,7 @@ kubectl get nodes
 ![Repository Cloned]()
 
 2. Create Kubernetes Namespace
+
 Create namespace.yaml:
 ```bash
 apiVersion: v1
