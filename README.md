@@ -62,4 +62,4 @@ git add .
 git commit -m "Initial project structure"
 git push
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/3-Structure.png?raw=true)
