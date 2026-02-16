@@ -624,6 +624,7 @@ kubectl get svc -n default
 🔴 3.Verify ArgoCD Application
 
 Check ArgoCD applications:
+
 ``bash 
 kubectl get applications -n argocd
 ```
