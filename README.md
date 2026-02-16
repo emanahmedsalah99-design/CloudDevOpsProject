@@ -45,7 +45,7 @@ Created structured directories for each DevOps stage
 git clone https://github.com/emanahmedsalah99-design/CloudDevOpsProject.git
 cd CloudDevOpsProject
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/1-Clone.png?raw=true)
 ```bash 
 mkdir docker kubernetes terraform ansible jenkins argocd
 touch docker/Dockerfile
