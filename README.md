@@ -642,6 +642,6 @@ minikube service node-app-service --url
 - Continuous Deployment
 - GitOps
 
-![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/4-test.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/CloudDevOpsProject/blob/main/Sreenshots/ChatGPT%20Image%20Feb%2017,%202026,%2004_40_21%20AM.png?raw=true)
 
 
