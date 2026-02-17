@@ -634,6 +634,7 @@ minikube service node-app-service --url
 - Application running on Kubernetes via ArgoCD
 - CI/CD achieved using Jenkins + ArgoCD
 
+---
 ### 🏆 Conclusion
 - This project demonstrates a real-world DevOps lifecycle integrating:
 - Infrastructure as Code
